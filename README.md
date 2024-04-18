@@ -37,4 +37,21 @@ comision24173
 7- Inicializamos el repo local 
 git init
 
+8- escribimos code . 
+Nos abre VSC
+9- Creamos el archivo README.md
+ Ponemos descripcion del proyecto
+10 - Volvemos a la consola de GIT BASH
+
+11- git status
+
+12- git add .
+
+13- git commit -m "first commit"
+
+14- git status
+
+15 - git branch --unset-upstream
+
+16 - git push --set-upstream origin main
 
