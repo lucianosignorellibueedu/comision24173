@@ -55,3 +55,16 @@ Nos abre VSC
 
 16 - git push --set-upstream origin main
 
+Los pasos del 7 al 16 se hacen la primera vez, solamente si nosotros creamos el repo
+
+Pasos del dia a dia
+git pull
+una vez que hicimos cambios
+git status
+git add .
+git commit -m "descripcion"
+git push
+
+
+
+
