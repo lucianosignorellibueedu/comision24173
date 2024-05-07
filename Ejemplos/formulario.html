@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/icons/house-solid.svg" type="image/svg+xml">
+    <title>Formulario</title>
+</head>
+<body>
+    <form id="miFormulario">
+        <label for="nombre">Nombre:</label>
+        <input placeholder="Escribi tu nombre" type="text" id="nombre" name="nombre" required>
+        <br>
+        <label for="correo">Correo:</label>
+        <input type="email" placeholder="Escribi tu correo"  id="correo" name="correo" required>
+        <br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="0" max="120">
+        <br>
+        <label for="color">Color favorito:</label>
+        <input type="color" id="color" name="color">
+        <br>
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha">
+        <br>
+
+        <label for="archivo">Archivo:</label>
+        <input type="file" id="archivo" name="archivo">
+        <br>
+        <label>Sexo:</label>
+        <input type="radio" id="sexoM" name="sexo" value="M">
+        <label for="sexoM">Masculino</label>
+        <input type="radio" id="sexoF" name="sexo" value="F">
+        <label for="sexoF">Femenino</label>
+        <br>
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea>
+        <br>
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+            <option value="es">España</option>
+            <option value="ar">Argentina</option>
+            <option value="mx">México</option>
+        </select>
+        <br>
+        <input type="checkbox" id="suscripcion" name="suscripcion">
+        <label for="suscripcion">Suscribirse</label>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="formulario.js"></script>
+</body>
+</html>
