@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo addEventListener</title>
+</head>
+<body>
+
+    <p>addEventListener es una forma más flexible de manejar eventos. Puedes asignar múltiples controladores de eventos al mismo elemento y especificar eventos personalizados.</p>   
+    <button id="miBoton">Haz clic</button>
+
+    <script>
+        const boton = document.getElementById("miBoton");
+
+        boton.addEventListener("click", function() {
+            alert("¡Hola desde el primer controlador de eventos!");
+        });
+
+        // Agregar otro controlador de eventos utilizando addEventListener
+        boton.addEventListener("click", function() {
+            console.log("Este es otro controlador de eventos.");
+        });
+    </script>
+</body>
+</html>

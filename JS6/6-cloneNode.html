@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo DOM: cloneNode</title>
+</head>
+<body>
+    <div id="original">
+        <p>Este es un párrafo original.</p>
+    </div>
+
+    <script>
+        // Obtener el elemento original
+        const elementoOriginal = document.getElementById("original");
+
+        // Clonar el elemento, incluyendo los nodos hijos
+        const elementoClonado = elementoOriginal.cloneNode(true);
+
+        // Modificar el contenido del elemento clonado
+        elementoClonado.querySelector("p").textContent = "Este es un párrafo clonado.";
+
+        // Agregar el elemento clonado al documento
+        document.body.appendChild(elementoClonado);
+    </script>
+</body>
+</html>

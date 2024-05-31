@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Price</title>
+
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Título principal -->
+        <h1>Bitcoin Price</h1>
+        <!-- Contenedor para mostrar el precio -->
+        <div class="price-container">
+            <!-- Mensaje de carga mientras se obtienen los datos -->
+            <p id="price-loading">Loading...</p>
+            <!-- Detalles del precio (oculto hasta que se obtengan los datos) -->
+            <div id="price-details" style="display: none;">
+                <!-- Mostrar el precio actual -->
+                <p><strong>Current Price:</strong> <span id="current-price"></span></p>
+                <!-- Mostrar la moneda -->
+                <p><strong>Currency:</strong> <span id="currency"></span></p>
+                <!-- Mostrar la última actualización -->
+                <p><strong>Last Updated:</strong> <span id="last-updated"></span></p>
+            </div>
+        </div>
+    </div>
+    <!-- Enlace al archivo JavaScript para la lógica -->
+    <script src="script.js"></script>
+</body>
+</html>

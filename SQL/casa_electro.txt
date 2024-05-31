@@ -1,0 +1,30 @@
+Tabla CLIENTES:
+
+id (entero de 4 dígitos) - Identificador único del cliente.
+apeynom (cadena de caracteres de hasta 45 caracteres) - Apellido y nombre del cliente.
+domcalle (cadena de caracteres de hasta 30 caracteres) - Calle de la dirección del cliente.
+domnro (entero de 6 dígitos) - Número de la dirección del cliente.
+provincia (entero de 2 dígitos) - Identificador de provincia.
+Clave primaria en id.
+Tabla PROVINCIAS:
+
+id (entero de 2 dígitos) - Identificador único de la provincia.
+provincia (cadena de caracteres de hasta 30 caracteres) - Nombre de la provincia.
+Clave primaria en id.
+Tabla PROVEEDORES:
+
+id (entero de 2 dígitos) - Identificador único del proveedor.
+proveedor (cadena de caracteres de hasta 30 caracteres) - Nombre del proveedor.
+Clave primaria en id.
+Tabla PRODUCTOS:
+
+id (entero de 2 dígitos) - Identificador único del producto.
+categ (entero de 2 dígitos) - Identificador de la categoría del producto.
+marca (entero de 2 dígitos) - Identificador de la marca del producto.
+modelo (cadena de caracteres de hasta 60 caracteres) - Modelo del producto.
+prov (entero de 2 dígitos) - Identificador del proveedor del producto.
+pantalla_pulg (cadena de hasta 10 caracteres) - Tamaño de pantalla en pulgadas.
+camara_mpx (cadena de hasta 5 caracteres) - Resolución de la cámara en megapíxeles.
+mem_int (cadena de hasta 10 caracteres) - Capacidad de memoria interna.
+precio (entero de 7 dígitos) - Precio del producto.
+Clave primaria en id.

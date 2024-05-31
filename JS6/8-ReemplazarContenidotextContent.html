@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo .textContent</title>
+</head>
+<body>
+    <div id="miDiv">Este es un <strong>elemento</strong> div.</div>
+    <button onclick="cambiarTexto()">Cambiar Texto</button>
+
+    <script>
+        function cambiarTexto() {
+            const div = document.getElementById("miDiv");
+            div.textContent = "Texto cambiado usando .textContent";
+        }
+    </script>
+</body>
+</html>

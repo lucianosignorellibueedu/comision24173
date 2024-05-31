@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Flexbox vs CSS Grid</title>
+</head>
+<body>
+
+    <section style="background-image: url('./img/1.jpg')"></section>
+        <div class="quienes-somos">
+            <h2 style="text-align: center;">Quiénes Somos</h2>
+            <p>Somos una empresa apasionada por la música y comprometida con brindar experiencias inolvidables. Desde nuestros inicios, nos hemos dedicado a conectar a los amantes de la música con sus artistas favoritos, ofreciendo un servicio de venta de entradas confiable y conveniente.</p>
+            <br>
+            <p>Nuestra misión es proporcionar acceso a los mejores conciertos y eventos en todo el mundo, asegurando que nuestros clientes vivan momentos únicos y emocionantes junto a sus artistas favoritos. Nos enorgullece ser parte de la creación de recuerdos que perdurarán para siempre en la memoria de nuestros clientes.</p>
+            <br>
+
+            <p>Con años de experiencia en la industria del entretenimiento, hemos establecido relaciones sólidas con promotores, salas de conciertos y artistas de renombre, lo que nos permite ofrecer una amplia gama de eventos y una experiencia de compra sin complicaciones.</p>
+            <br>
+
+            <p>Valoramos la satisfacción del cliente por encima de todo, por lo que nos esforzamos por brindar un servicio excepcional y una atención personalizada en cada interacción. Nuestro equipo dedicado está siempre disponible para ayudar y garantizar que cada cliente tenga una experiencia positiva y satisfactoria.</p>
+            <br>
+
+            <p>En resumen, somos más que una empresa de venta de entradas; somos facilitadores de sueños, conectando a las personas con la música y los momentos que dan color a sus vidas. Únete a nosotros en esta emocionante aventura y deja que la música te lleve a lugares inesperados.</p>
+        </div>
+    </section>
+    <section>
+        <div class="contenedor">
+            <div class="contenedor-conciertos">
+    
+                <div class="card" style="background-image: url('./img/1.jpg')">
+                    <div class="textos">
+                        <h3>Rock In Rio</h3>
+                        <p>27 de Octubre 2024</p>
+                    </div>
+                </div>
+    
+                <div class="card" style="background-image: url('./img/2.jpg')">
+                    <div class="textos">
+                        <h3>FalconMasters’ Concert</h3>
+                        <p>12 de Noviembre 2024</p>
+                    </div>
+                </div>
+    
+                <div class="card" style="background-image: url('./img/3.jpg')">
+                    <div class="textos">
+                        <h3>Coachella</h3>
+                        <p>13 de Diciembre 2024</p>
+                    </div>
+                </div>
+    
+                <div class="card" style="background-image: url('./img/4.jpg')">
+                    <div class="textos">
+                        <h3>US Festival</h3>
+                        <p>20 de Diciembre 2024</p>
+                    </div>
+                </div>
+    
+                <div class="card" style="background-image: url('./img/5.jpg')">
+                    <div class="textos">
+                        <h3>Altamont Speedway</h3>
+                        <p>27 de Diciembre 2024</p>
+                    </div>
+                </div>
+                
+                <div class="card" style="background-image: url('./img/6.jpg')">
+                    <div class="textos">
+                        <h3>Rock In Rio Again</h3>
+                        <p>1 de Enero 2024</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="banner" style="background-image: url('./img/banner.jpg')">
+                <h3>Rock Legends 2024</h3>
+                <ul>
+                    <li>Guns N' Roses</li>
+                    <li>AC/DC</li>
+                    <li>Motley Crue</li>
+                    <li>The Cult</li>
+                    <li>Poison</li>
+                    <li>Def Leppard</li>
+                </ul>
+                <button class="boton">Comprar Entradas</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="formulario">
+            <h2>Formulario de Contacto</h2>
+            <form id="miFormulario">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="campo">
+                    <input type="checkbox" id="suscripcion" name="suscripcion">
+                    <label for="suscripcion">Suscribirse</label>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    <section>
+        <div class="iframe">
+            <h2>Punto de retiro</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19047.934795826823!2d-57.95391287103425!3d-34.92219475771558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1715465402509!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+   
+    <script src="js/formulario.js"></script>
+
+</body>
+</html> 

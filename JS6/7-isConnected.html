@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo DOM: isConnected</title>
+</head>
+<body>
+    <div id="elemento">
+        <p>Este es un párrafo dentro de un elemento.</p>
+    </div>
+
+    <script>
+        // Obtener el elemento y el párrafo
+        const elemento = document.getElementById("elemento");
+        const parrafo = elemento.querySelector("p");
+
+        // Verificar si el párrafo está conectado al árbol del documento
+        if (parrafo.isConnected) {
+            console.log("El párrafo está conectado al documento.");
+        } else {
+            console.log("El párrafo no está conectado al documento.");
+        }
+    </script>
+</body>
+</html>

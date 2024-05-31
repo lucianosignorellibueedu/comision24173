@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Character Lookup</title>
+    <!-- Enlace al archivo CSS para estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Título principal -->
+        <h1>Rick and Morty Character Lookup</h1>
+        <!-- Formulario para ingresar el ID del personaje -->
+        <form id="character-form">
+            <label for="character-id">Enter Character ID:</label>
+            <input type="text" id="character-id" name="character-id" required>
+            <button type="submit">Lookup</button>
+        </form>
+        <!-- Contenedor para mostrar los detalles del personaje -->
+        <div id="character-details" style="display: none;">
+            <!-- Detalles del personaje (se rellenarán con JavaScript) -->
+            <h2>Character Details</h2>
+            <p><strong>Name:</strong> <span id="character-name"></span></p>
+            <p><strong>Status:</strong> <span id="character-status"></span></p>
+            <p><strong>Species:</strong> <span id="character-species"></span></p>
+            <p><strong>Gender:</strong> <span id="character-gender"></span></p>
+            <p><strong>Origin:</strong> <span id="character-origin"></span></p>
+        </div>
+        <!-- Mensaje de error para mostrar si el ID del personaje no existe -->
+        <p id="error-message" style="display: none; color: red;">Character not found.</p>
+    </div>
+    <!-- Enlace al archivo JavaScript para la lógica -->
+    <script src="script.js"></script>
+</body>
+</html>

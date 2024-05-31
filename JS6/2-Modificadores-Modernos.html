@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo DOM con querySelector</title>
+</head>
+<body>
+
+
+    <h1 id="titulo">Título de la Página</h1>
+    
+    <div class="mi-clase">Este es un div con una clase.</div>
+    <div class="mi-clase">Este es otro div con la misma clase.</div>
+    
+    <input type="text" name="nombre" value="Nombre">
+    
+    <p>Este es un párrafo.</p>
+    <p>Este es otro párrafo.</p>
+    
+    <script>
+        // Utilizar querySelector para obtener un elemento por su selector CSS
+        const titulo = document.querySelector("#titulo");
+        titulo.innerHTML = "Nuevo Título de la Página";
+
+        // Utilizar querySelectorAll para obtener todos los elementos con la misma clase
+        const elementosConClase = document.querySelectorAll(".mi-clase");
+        elementosConClase.forEach(elemento => {
+            elemento.innerHTML = "Texto cambiado por clase.";
+        });
+
+        // Utilizar querySelector para obtener el elemento de entrada de texto por su atributo name
+        const inputNombre = document.querySelector('input[name="nombre"]');
+        inputNombre.value = "Nuevo Nombre";
+
+        // Utilizar querySelectorAll para obtener todos los elementos de párrafo y cambiar su contenido
+        const parrafos = document.querySelectorAll("p");
+        parrafos.forEach(parrafo => {
+            parrafo.innerHTML = "Este es un nuevo párrafo.";
+        });
+    </script>
+</body>
+</html>

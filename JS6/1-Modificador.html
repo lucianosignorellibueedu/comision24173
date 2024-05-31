@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo DOM</title>
+</head>
+<body>
+    <h1 id="titulo">Título de la Página</h1>
+    
+    <div class="mi-clase">Este es un div con una clase.</div>
+    <div class="mi-clase">Este es otro div con la misma clase.</div>
+    
+    <input type="text" name="nombre" value="Nombre">
+    
+    <p>Este es un párrafo.</p>
+    <p>Este es otro párrafo.</p>
+    
+    <script>
+        // Obtener elemento por su ID
+        const titulo = document.getElementById("titulo");
+        titulo.innerHTML = "Nuevo Título de la Página";
+
+        // Obtener elementos por su clase
+        const elementosConClase = document.getElementsByClassName("mi-clase");
+        for (let i = 0; i < elementosConClase.length; i++) {
+            elementosConClase[i].innerHTML = "Texto cambiado por clase.";
+        }
+
+        // Obtener elementos por su nombre
+        const elementosPorNombre = document.getElementsByName("nombre");
+        elementosPorNombre[0].value = "Ingrese su Nombre";
+
+        // Obtener elementos por su etiqueta
+        const parrafos = document.getElementsByTagName("p");
+        for (let i = 0; i < parrafos.length; i++) {
+            parrafos[i].innerHTML = "Este es un nuevo párrafo.";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo .innerHTML</title>
+</head>
+<body>
+    <div id="miDiv">Este es un <strong>elemento</strong> div.</div>
+    <button onclick="cambiarHTML()">Cambiar HTML</button>
+
+    <script>
+        function cambiarHTML() {
+            const div = document.getElementById("miDiv");
+            div.innerHTML = "HTML <em>cambiado</em> usando <strong>.innerHTML</strong>";
+        }
+    </script>
+</body>
+</html>

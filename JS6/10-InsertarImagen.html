@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insertar y Eliminar Imagen</title>
+</head>
+<body>
+    <div id="contenedor-imagen"></div>
+    <button onclick="insertarImagen()">Insertar Imagen</button>
+    <button onclick="eliminarImagen()">Eliminar Imagen</button>
+
+    <script>
+        function insertarImagen() {
+            const contenedor = document.getElementById("contenedor-imagen");
+
+            // Crear un elemento de imagen
+            const imagen = document.createElement("img");
+            imagen.src = '\messi.jpeg'; // Reemplaza con la URL de tu imagen
+            imagen.alt = "Descripción de la imagen";
+
+            // Agregar la imagen al contenedor
+            contenedor.appendChild(imagen);
+        }
+
+        function eliminarImagen() {
+            const contenedor = document.getElementById("contenedor-imagen");
+            
+            // Obtener la imagen dentro del contenedor
+            const imagen = contenedor.querySelector("img");
+
+            // Verificar si la imagen existe antes de intentar eliminarla
+            if (imagen) {
+                // Eliminar la imagen del contenedor
+                imagen.remove();
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .completed {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="container">
+        <h1>Lista de Tareas</h1>
+        <input type="text" id="newTaskInput" placeholder="Agregar nueva tarea">
+        <button id="addTaskBtn">Agregar</button>
+        <ul id="taskList"></ul>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const newTaskInput = document.getElementById('newTaskInput');
+            const addTaskBtn = document.getElementById('addTaskBtn');
+            const taskList = document.getElementById('taskList');
+
+            addTaskBtn.addEventListener('click', function () {
+                const taskText = newTaskInput.value.trim();
+                if (taskText !== '') {
+                    const newTask = document.createElement('li');
+                    newTask.textContent = taskText;
+                    taskList.appendChild(newTask);
+                    newTaskInput.value = '';
+
+                    newTask.addEventListener('click', function () {
+                        newTask.classList.toggle('completed');
+                    });
+
+                    const deleteBtn = document.createElement('button');
+                    deleteBtn.textContent = 'Eliminar';
+                    deleteBtn.classList.add('delete-btn');
+                    newTask.appendChild(deleteBtn);
+
+                    deleteBtn.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                        taskList.removeChild(newTask);
+                    });
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo propiedad onclick</title>
+</head>
+<body>
+    <p>En este ejemplo, hemos asignado dos controladores de eventos a un botón utilizando la propiedad onclick. El segundo controlador de eventos reemplaza al primero.</p>
+
+    <button id="miBoton">Haz clic</button>
+    <script>
+        const boton = document.getElementById("miBoton");
+
+        boton.onclick = function() {
+            alert("¡Hola desde la propiedad onclick!");
+        };
+
+        // Agregar otro controlador de eventos utilizando la propiedad onclick
+        // boton.onclick = function() {
+        //     console.log("Este es otro controlador de eventos.");
+        // };
+    </script>
+</body>
+</html>
